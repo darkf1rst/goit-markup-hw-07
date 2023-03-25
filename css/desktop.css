@@ -1,0 +1,15 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1188px;
+    
+  }
+  .team-list-object {
+    width: calc((100% - 72px) / 4);}
+    .team {
+        padding: 120px 0;
+      }
+      
+}
+
+
+

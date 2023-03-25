@@ -39,11 +39,12 @@ ul {
 }
 
 .container {
-  width: 1158px;
+  /* width: 1158px; */
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .header-link:focus,
 .header-link:hover {
   color: var(--main-button-color);
@@ -310,7 +311,7 @@ a {
 
 .team {
   background-color: var(--main-background-color);
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .team-title {
   text-align: center;
@@ -327,7 +328,7 @@ a {
   gap: 24px;
 }
 .team-list-object {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
 }
 .team-list-object:last-child {
   margin-right: 24px;
