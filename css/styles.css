@@ -45,6 +45,14 @@ ul {
   padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .header-link:focus,
 .header-link:hover {
   color: var(--main-button-color);
@@ -178,7 +186,6 @@ a {
 /* hero */
 
 .hero-section {
-  width: 100%;
   margin: auto;
   padding: 112px 0;
   text-align: center;
@@ -283,6 +290,7 @@ a {
 
 .section-3 {
   padding-bottom: 120px;
+  display: none;
 }
 .section-3-title {
   margin-bottom: 72px;
@@ -320,14 +328,14 @@ a {
   color: var(--main-title-color);
 }
 .team-list {
-  display: flex;
-  gap: 24px;
 }
 .team-list-object {
+  display: block;
+  max-width: 264px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
   width: 100%;
-}
-.team-list-object:last-child {
-  margin-right: 24px;
 }
 .team-list-subtitle {
   margin-bottom: 8px;
@@ -388,8 +396,8 @@ a {
 /* Customers */
 
 .customers {
-  padding-top: 130px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .customers-container {
 }
@@ -407,12 +415,14 @@ a {
 }
 .customers-list {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  column-gap: 16px;
+  row-gap: 72px;
 }
-.customers-list-object {
-}
+
 .customers-link {
   width: 168px;
   height: 88px;
@@ -438,12 +448,14 @@ a {
 
 .footer {
   background-color: var(--main-title-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  width: 264px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .foooter-link {
   font-family: "Raleway";
@@ -471,12 +483,20 @@ a {
 }
 .footer-list-icon {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
   gap: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .footer-list-icon-item {
   height: 40px;
   width: 40px;
+}
+.footer-items{
+  width: 264px;
 }
 .footer-list-icon-link {
   background: linear-gradient(
@@ -496,7 +516,11 @@ a {
   fill: var(--main-background-color);
 }
 .footer-social-container {
-  margin-left: 120px;
+  width: 208px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 72px;
+  margin-bottom: 72px;
 }
 .footer-list-icon-link:is(:focus, :hover) {
   background-color: var(--main-footer-color);

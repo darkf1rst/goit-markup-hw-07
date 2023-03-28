@@ -27,10 +27,26 @@
     justify-content: space-between;
     row-gap: 72px;
   }
-  .section-2-list-item {
+  .section-2-list-items {
     margin: 0;
     width: calc((100% - 30px) / 2);
     gap: 24px;
+  }
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  .customers-list {
+    padding-left: 93px;
+    padding-right: 93px;
+    justify-content: space-between;
+  }
+  .customers-list-object {
+    width: 168px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
