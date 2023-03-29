@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,13 +18,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="css/tablet.css" />
     <link rel="stylesheet" href="css/desktop.css" />
     <title>Studio</title>
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="header-link-studio"
@@ -42,12 +42,11 @@
               <a href="" class="header-link">Contacts</a>
             </li>
           </ul>
+          <button type="button" class="mobile-menu-open js-open-menu">
+						<svg width="32" heigh="32" aria-label="Mobile menu tumbler" class="mobile-menu-open-icon">
+							<use class="icon-menu" href="images/symbol-defs .svg#icon-Vector1"></use>
+						</svg>
         </nav>
-        <button type="button" class="mobile-menu-open js-open-menu">
-          <svg width="32px" heigh="32px" aria-label="Mobile menu tumbler" class="mobile-menu-open-icon">
-            <use class="icon-menu" href="./images/symbol-def.svg#icon-Vector"></use>
-          </svg>
-
         <address class="adress">
           <ul class="adress-list">
             <li class="adress-list-item">
@@ -63,7 +62,7 @@
           </ul>
         </address>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- Hero section -->
 
@@ -402,11 +401,11 @@
               </a>
             </li>
           </ul>
-        </div> 
-     </section>  
+        </div>
+      </section>
     </main>
 
-     <footer class="footer">
+    <footer class="footer">
       <div class="footer-container container">
         <div class="footer-items">
           <a href="./index.html" class="foooter-link"
@@ -474,7 +473,7 @@
       </div>
     </footer>
     <!-- Modal -->
-     <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <button type="button" class="modal-btn-close" data-modal-close>
@@ -557,7 +556,69 @@
         </form>
       </div>
     </div>
-    <script src="modal.js"></script> 
-    <script defer src="js/mobile-menu.js"></script>
+    <!-- modal mobile -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu btn-close">
+        <svg class="close">
+          <use href="images/symbol-def.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a href="index.html" class="mobile-menu-link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="portfolio.html" class="mobile-menu-link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts-list">
+        <li class="mobile-contacts-item">
+          <a href="tel:+11(000)1111111" class="mobile-contacts-link link accent"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-contacts-item">
+          <a href="mailto:info@devstudio.com" class="mobile-contacts-link link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="team-list-icon mobile-social-list">
+        <li class="team-list-icon-item">
+          <a class="team-list-icon-link" href="">
+            <svg class="team-social-icon" width="16" height="16">
+              <use href="images/symbol-defs .svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-list-icon-item">
+          <a class="team-list-icon-link" href="">
+            <svg class="team-social-icon" width="16" height="16">
+              <use href="images/symbol-defs .svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-list-icon-item">
+          <a class="team-list-icon-link" href="">
+            <svg class="icon-item" width="16" height="16">
+              <use href="images/symbol-defs .svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-list-icon-item">
+          <a class="team-list-icon-link" href="">
+            <svg class="icon-item" width="16" height="16">
+              <use href="images/symbol-defs .svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script src="modal.js"></script>
+    <script src="mobile-menu.js"></script>
   </body>
 </html>

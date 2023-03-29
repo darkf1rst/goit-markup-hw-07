@@ -60,4 +60,43 @@
       ),
       url(../images/tablet2x.jpg);
   }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .footer-items {
+    display: block;
+    width: 264px;
+    text-align: left;
+    margin-left: 120px;
+    margin-top: 0;
+  }
+  .footer-form {
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
+  }
+  .footer-form-email {
+    width: 264px;
+  }
+  .footer-btn {
+    margin-top: 0;
+    margin-left: 24px;
+  }
+  .footer-form-input {
+    width: 264px;
+  }
+  .subs-text {
+    text-align: left;
+    margin-left: 120px;
+  }
+  .footer-social-container {
+    margin-top: 0;
+    margin-left: 24px;
+    margin-right: 0;
+  }
+  .footer-items {
+    margin-right: 0;
+  }
 }
