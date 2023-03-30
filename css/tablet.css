@@ -2,6 +2,29 @@
   .container {
     width: 768px;
   }
+  .header-list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin-left: 76px;
+    gap: 40px;
+  }
+  .adress {
+    display: flex;
+    margin-left: 120px;
+  }
+  .adress-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .menu-toggle {
+    display: none;
+  }
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
