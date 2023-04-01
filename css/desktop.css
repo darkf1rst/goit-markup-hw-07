@@ -2,10 +2,23 @@
   .container {
     width: 1158px;
   }
+  .header {
+    padding: 24px 0;
+  }
   .adress-list {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+  }
+  .header-link {
+    padding-bottom: 27px;
+  }
+  .adress-list {
+    margin-left: 332px;
+    gap: 40px;
+  }
+  .adress {
+    margin-left: 0;
   }
   .hero-section {
     width: 100%;
@@ -24,6 +37,7 @@
   .hero-container {
     max-width: 600px;
   }
+
   .section-2 {
     padding: 120px 0;
   }
@@ -50,7 +64,6 @@
     color: var(--main-title-color);
   }
   .section-2-list-text {
-    max-width: 264px;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;

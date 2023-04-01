@@ -252,6 +252,10 @@ a {
   align-items: center;
 }
 .section-2-list-items {
+  margin-bottom: 72px;
+}
+.section-2-list-items:last-child {
+  margin-bottom: 0;
 }
 .section-2-list-title {
   text-align: center;
@@ -263,7 +267,6 @@ a {
   color: var(--main-title-color);
 }
 .section-2-list-text {
-  margin-bottom: 72px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -324,6 +327,9 @@ a {
   margin-right: auto;
   margin-bottom: 72px;
   width: 100%;
+}
+.team-list-object:last-child{
+  margin-bottom: 0;
 }
 .team-list-subtitle {
   margin-bottom: 8px;
