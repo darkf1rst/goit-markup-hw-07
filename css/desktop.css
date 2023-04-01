@@ -18,8 +18,14 @@
   }
   .adress {
   }
+  .adress-tel {
+    font-size: 16px;
+  }
+  .adress-mail {
+    font-size: 16px;
+  }
   .hero-section {
-    width: 100%;
+    max-width: 1440px;
     margin: 0;
     padding: 188px 0;
     background-image: linear-gradient(
