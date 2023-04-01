@@ -19,7 +19,7 @@
   }
   .adress {
     display: flex;
-    margin-left: 120px;
+    margin-left: auto;
   }
   .adress-list {
     display: flex;
@@ -33,8 +33,14 @@
   }
   .adress-tel {
     font-size: 12px;
+    font-style: normal;
+    line-height: 1.17;
+    font-size: 12px;
   }
   .adress-mail {
+    font-size: 12px;
+    font-style: normal;
+    line-height: 1.17;
     font-size: 12px;
   }
   .menu-toggle {
